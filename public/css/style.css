@@ -1,10 +1,10 @@
-body {
+  body {
   font-family: 'Helvetica Neue';
   margin: 15px 0 0 30px;
   background-color: #85E0E0;
 }
 
-.intro {
+.name {
   box-shadow: 0 0 1em hsla(255, 90%, 90%, 0.9);
   background-color: #A7EBEB;
   padding: 1%;

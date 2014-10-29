@@ -6,13 +6,24 @@ $(document).ready(function() {
     var weapons = ["rock", "paper", "scissors", "lizard", "spock"];
 
     $('.choices img').on('click', function(){
-        player1.picks($(this).data('pick'));
-        player2.randomChoice(weapons);
+        if ($('.name').val() === "")
+            {
+                $('.name').jrumble();
+                setInterval(function() { $('.name').trigger('stopRumble');},700);
+                $('.name').trigger('startRumble');    
 
-    $('<li>' + game.winningMessage() + '</li>').prependTo('#results').slideDown();
-    $("#results li:gt(2)").fadeOut(1000, function(){
-        $(this).remove();
-    });
-    });
 
+            }
+        else
+            {
+                player1.name = $('.name').val();
+                player1.picks($(this).data('pick'));
+                player2.randomChoice(weapons);
+
+                $('<li>' + game.winningMessage() + '</li>').prependTo('#results').slideDown();
+                $("#results li:gt(2)").fadeOut(1000, function(){
+                $(this).remove();
+            });
+            }
+    });
   });
