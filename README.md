@@ -9,6 +9,7 @@ I used javascript and jQuery, Jasmine SpecRunner for testing, Sinatra for the se
 
     git clone git@github.com:yasuba/rockpaperscissors-js.git
     cd rockpaperscissors-js.git
+    bundle
     rackup
     
 To play, navigate in your browser to localhost:9292
