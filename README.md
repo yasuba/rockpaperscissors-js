@@ -7,7 +7,11 @@ I used javascript and jQuery, Jasmine SpecRunner for testing, Sinatra for the se
 
 ##Play the game!
 
-To play, simply run rackup from the command line, then go to localhost:9292
+    git clone git@github.com:yasuba/rockpaperscissors-js.git
+    cd rockpaperscissors-js.git
+    rackup
+    
+To play, navigate in your browser to localhost:9292
 
 * Scissors cut Paper
 * Paper covers Rock
